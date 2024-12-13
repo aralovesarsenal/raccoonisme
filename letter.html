@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>araccoonlover</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+            background: linear-gradient(to bottom, #1a1a2e, #16213e);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+            overflow: hidden;
+        }
+
+        .browser-window {
+            width: 80%;
+            max-width: 1000px;
+            height: 700px;
+            background-color: #111;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .browser-header {
+            background-color: #1a1a2e;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .browser-header div {
+            width: 12px;
+            height: 12px;
+            background-color: #ff5f57;
+            border-radius: 50%;
+        }
+
+        .browser-header div:nth-child(2) {
+            background-color: #ffbd2e;
+        }
+
+        .browser-header div:nth-child(3) {
+            background-color: #27c93f;
+        }
+
+        .search-bar {
+            margin: 20px;
+            padding: 10px;
+            width: calc(100% - 40px);
+            border-radius: 8px;
+            background-color: #222;
+            color: white;
+            font-size: 1rem;
+            border: 1px solid #a68cf7;
+            outline: none;
+        }
+
+        .search-bar::placeholder {
+            color: #a68cf7;
+        }
+
+        .browser-content {
+            flex: 1;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 0 0 8px 8px;
+            overflow-y: auto;
+        }
+
+        .intro-message {
+            font-size: 1.2rem;
+            color: white;
+            line-height: 1.6;
+            text-align: left;
+            margin: 0;
+            white-space: pre-line;
+            opacity: 0;
+            animation: typeAnimation 5s forwards;
+        }
+
+        @keyframes typeAnimation {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+
+        .image-slot {
+            position: absolute;
+            top: 5%;
+            right: 5%;
+            border-radius: 50%;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+        }
+
+        .image-slot img {
+            width: 150px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="browser-window">
+        <div class="browser-header">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <input class="search-bar" type="text" value="Searching for EmotionallyAbsent / Arabella..." disabled />
+        <div class="browser-content">
+            <p class="intro-message">
+                I think raccoons are silly little cutie pies trash monsters my babies hehehe lalala
+
+                I love love love collecting sanrio figures nd plush toys
+
+                Imo deep talks are the best form of intimacy, i mostly call instead of text but both work fine hehehe!!
+                
+                Im really loud nd kind of a weirdo.. im ALL brainrot so dont talk to me if ur js gonna make fun of me yipeepepe
+
+                I fw all animals but im also into guys AND girls cus yah hit me up king !!!!
+
+                music wise id say i kind of listen to everything i dunno heyeyahaha.... if i dont listen to them im willing to listen to them for u hihi
+
+                dont talk to me if you find everyth embarrassing, obviously I have public decency but i also enjoy a lil fun hauehahe!!! who cares abt strangers who dont truly know u?? who gives a shit whats cool, dont talk to me if you only care abt public opinion, i want raw real relationships, dont lie abt who you are das not cute..
+
+                talk to me if youre okay with clingy loud silly people who love hugs and giggling and making silly stupid nonsense jokes and laugh at their own jokes cause thats literally who i am yayyyy!!!
+            </p>
+        </div>
+        <div class="image-slot">
+            <img src="https://i.pinimg.com/736x/96/bd/d4/96bdd443b49535b64d337b823c05e0ad.jpg" alt="User Image">
+        </div>
+    </div>
+
+    <script>
+        setTimeout(() => {
+            document.querySelector('.intro-message').style.opacity = 1;
+        }, 1000);
+    </script>
+</body>
+</html>

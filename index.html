@@ -1,0 +1,129 @@
+<!-- Page 1 (index.html) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aracoonlover</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+            background: linear-gradient(to bottom, #1a1a2e, #16213e);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #dcd6f7;
+            margin-bottom: 30px;
+            text-shadow: 0 0 10px #9a8cfd;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .button {
+            background: #a68cf7;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 12px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+            box-shadow: 0 0 8px #9a8cfd;
+        }
+
+        .button:hover {
+            background: #9a8cfd;
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px #b9a7fd;
+            animation: beat 1s infinite;
+        }
+
+        @keyframes beat {
+            0%, 100% {
+                transform: scale(1.1) translateY(-5px);
+            }
+            50% {
+                transform: scale(1.15) translateY(-5px);
+            }
+        }
+
+        .stars {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            z-index: -1;
+        }
+
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: white;
+            border-radius: 50%;
+            animation: twinkle 3s infinite ease-in-out;
+        }
+
+        @keyframes twinkle {
+            0%, 100% {
+                opacity: 0.8;
+            }
+            50% {
+                opacity: 0.3;
+            }
+        }
+
+        .image-slot {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .image-slot img {
+            max-width: 300px;
+            border-radius: 100px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="stars">
+        <script>
+            for (let i = 0; i < 150; i++) {
+                let star = document.createElement('div');
+                star.className = 'star';
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                star.style.animationDelay = Math.random() * 3 + 's';
+                document.querySelector('.stars').appendChild(star);
+            }
+        </script>
+    </div>
+    <div class="container">
+        <h1>Do you want to proceed?</h1>
+        <div class="image-slot">
+            <img src="https://i.pinimg.com/736x/5d/44/b0/5d44b01f4a8194d3ad164f354dc0c323.jpg" alt="Decorative Image 1">
+        </div>
+        <div class="buttons">
+            <button class="button" onclick="location.href='letter.html'">Yes please hihi</button>
+            <button class="button" onclick="alert('No? OMG WHUTT 😅')">No omg whutt</button>
+        </div>
+        
+    </div>
+</body>
+</html>
